@@ -1,0 +1,81 @@
+[
+  {
+    "name": "table",
+    "source": "https://3d-api.si.edu/content/document/3d_package:debebbb8-f7ee-4a6d-941c-12ea01dec71a/resources/usnm_244-100k-2048_std_draco.glb",
+    "asset": {
+      "generator": "MeshSmith mesh conversion tool",
+      "version": "2.0"
+    },
+    "sourcePage": "https://3d.si.edu/corals/shape-structure",
+    "species": "Madrepora spicifera",
+    "catalog": "USNM 244",
+    "objectPage": "https://3d.si.edu/object/3d/madrepora-spicifera:debebbb8-f7ee-4a6d-941c-12ea01dec71a",
+    "license": "CC0-1.0",
+    "modifications": "Display bases trimmed where present; normalized, triangle budget reduced with original UV atlases retained, converted without Draco, artistically tinted in the aquarium.",
+    "licenseVerification": "https://www.si.edu/es/object/3d/madrepora-spicifera%3Adebebbb8-f7ee-4a6d-941c-12ea01dec71a"
+  },
+  {
+    "name": "lobed",
+    "source": "https://3d-api.si.edu/content/document/3d_package:d85d7078-a2fd-4872-8a81-9d87ba2045cc/resources/usnm_5781-100k-2048_std_draco.glb",
+    "asset": {
+      "generator": "MeshSmith mesh conversion tool",
+      "version": "2.0"
+    },
+    "sourcePage": "https://3d.si.edu/corals/shape-structure",
+    "species": "Goniopora columna",
+    "catalog": "USNM 5781",
+    "objectPage": "https://3d.si.edu/object/3d/goniopora-columna:d85d7078-a2fd-4872-8a81-9d87ba2045cc",
+    "license": "CC0-1.0",
+    "modifications": "Display bases trimmed where present; normalized, triangle budget reduced with original UV atlases retained, converted without Draco, artistically tinted in the aquarium.",
+    "licenseVerification": "https://sketchfab.com/3d-models/goniopora-columna-6b652ae52c4d4232b26cfb5b900f7d8a"
+  },
+  {
+    "name": "bush",
+    "source": "https://3d-api.si.edu/content/document/3d_package:3310773f-822e-4376-bd03-2f9d69cfb22c/resources/usnm_1128565-100k-2048_std_draco.glb",
+    "asset": {
+      "generator": "MeshSmith mesh conversion tool",
+      "version": "2.0"
+    },
+    "sourcePage": "https://3d.si.edu/corals/shape-structure",
+    "species": "Pocillopora damicornis",
+    "catalog": "USNM 1128565",
+    "objectPage": "https://3d.si.edu/object/3d/pocillopora-damicornis:3310773f-822e-4376-bd03-2f9d69cfb22c",
+    "license": "CC0-1.0",
+    "modifications": "Display bases trimmed where present; normalized, triangle budget reduced with original UV atlases retained, converted without Draco, artistically tinted in the aquarium.",
+    "licenseVerification": "https://3d-api.si.edu/api/v1.0/content/file/search?model_url=3310773f-822e-4376-bd03-2f9d69cfb22c&file_type=glb&rows=100",
+    "licenseNote": "Listed by the Smithsonian 3D Open Access file API for this specimen. API documentation: https://3d-api.si.edu/api-docs/; policy: https://www.si.edu/openaccess/faq"
+  },
+  {
+    "name": "lettuce",
+    "species": "Pavonia praetorta",
+    "source": "https://3d-api.si.edu/content/document/3d_package:09121e7e-c113-4f2c-a739-cdce13a33cfc/resources/USNM_152_macro-100k-2048_std_draco.glb",
+    "sourcePage": "https://3d.si.edu/corals/shape-structure",
+    "catalog": "USNM 152",
+    "objectPage": "https://3d.si.edu/object/3d/pavonia-praetorta-detail-view:09121e7e-c113-4f2c-a739-cdce13a33cfc",
+    "license": "CC0-1.0",
+    "modifications": "Display bases trimmed where present; normalized, triangle budget reduced with original UV atlases retained, converted without Draco, artistically tinted in the aquarium.",
+    "licenseVerification": "https://www.si.edu/es/object/3d/pavonia-praetorta-detail-view%3A09121e7e-c113-4f2c-a739-cdce13a33cfc"
+  },
+  {
+    "name": "plate",
+    "species": "Echinopora reflexa",
+    "source": "https://3d-api.si.edu/content/document/3d_package:9922a8a1-e0bd-4c72-8511-aaf633ef6c2f/resources/usnm_164-100k-2048_std_draco.glb",
+    "sourcePage": "https://3d.si.edu/corals/shape-structure",
+    "catalog": "USNM 164",
+    "objectPage": "https://3d.si.edu/object/3d/echinopora-reflexa:9922a8a1-e0bd-4c72-8511-aaf633ef6c2f",
+    "license": "CC0-1.0",
+    "modifications": "Display bases trimmed where present; normalized, triangle budget reduced with original UV atlases retained, converted without Draco, artistically tinted in the aquarium.",
+    "licenseVerification": "https://www.si.edu/es/object/3d/echinopora-reflexa%3A9922a8a1-e0bd-4c72-8511-aaf633ef6c2f"
+  },
+  {
+    "name": "brain",
+    "species": "Diploria labyrinthiformis",
+    "source": "https://3d-api.si.edu/content/document/3d_package:87738412-3acd-45d1-bff4-3ab67093470e/resources/usnm_74947-100k-2048_std_draco.glb",
+    "sourcePage": "https://3d.si.edu/corals/shape-structure",
+    "catalog": "USNM 74947",
+    "objectPage": "https://3d.si.edu/object/3d/diploria-labyrinthiformis:87738412-3acd-45d1-bff4-3ab67093470e",
+    "license": "CC0-1.0",
+    "modifications": "Display bases trimmed where present; normalized, triangle budget reduced with original UV atlases retained, converted without Draco, artistically tinted in the aquarium.",
+    "licenseVerification": "https://sketchfab.com/3d-models/diploria-labyrinthiformis-cbbf64f211f84a7cb62887fec11f54fe"
+  }
+]

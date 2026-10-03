@@ -1,0 +1,6 @@
+# Preserve the vendored shader sources byte-for-byte, including upstream spacing.
+vendor/threejs-water/** -whitespace
+*.glb binary
+*.hdr binary
+*.png binary
+*.jpg binary

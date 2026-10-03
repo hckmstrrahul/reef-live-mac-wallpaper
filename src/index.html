@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' data: blob:; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>Reef: a living aquarium</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #020c1b;
+        color: #e2f2f4;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+      canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      #panel {
+        position: absolute;
+        bottom: 28px;
+        left: 30px;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        background: #061321b3;
+        border: 1px solid #bedef01c;
+        padding: 16px 20px;
+        border-radius: 16px;
+        backdrop-filter: blur(24px);
+        transition: opacity 0.6s;
+        box-shadow: 0 8px 40px #0003;
+      }
+      body.quiet #panel {
+        opacity: 0;
+        pointer-events: none;
+      }
+      #brand {
+        font-family: Georgia, serif;
+        font-size: 24px;
+        letter-spacing: 1px;
+      }
+      small {
+        display: block;
+        font-size: 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        opacity: 0.55;
+        margin-top: 5px;
+      }
+      .line {
+        width: 1px;
+        height: 32px;
+        background: #ffffff20;
+      }
+      button,
+      select {
+        color: inherit;
+        background: #d1eaf00b;
+        border: 1px solid #c6ecff20;
+        border-radius: 8px;
+        padding: 9px 12px;
+        cursor: pointer;
+        font: inherit;
+        font-size: 12px;
+      }
+      select {
+        color-scheme: dark;
+        min-width: 114px;
+      }
+      button:hover {
+        background: #c6ecff20;
+      }
+      #hint {
+        font-size: 11px;
+        line-height: 1.6;
+        color: #a1b4c4;
+      }
+      #loading {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-content: center;
+        background: #020c1b;
+        transition: opacity 1s;
+        pointer-events: none;
+        font: 22px Georgia;
+      }
+      #loading small {
+        font:
+          10px -apple-system,
+          sans-serif;
+        margin-top: 15px;
+        text-align: center;
+      }
+      #error {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        right: 24px;
+        padding: 20px;
+        background: #481c25;
+        display: none;
+      }
+      #status {
+        position: absolute;
+        right: 28px;
+        bottom: 30px;
+        font:
+          10px ui-monospace,
+          monospace;
+        opacity: 0.45;
+        display: none;
+      }
+      body.debug #status {
+        display: block;
+      }
+      body.wallpaper #panel {
+        display: none;
+      }
+      @media (max-width: 1040px) {
+        #hint,
+        .line {
+          display: none;
+        }
+        #panel {
+          gap: 12px;
+          left: 20px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #panel,
+        #loading {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loading">
+      A little ocean, coming to life.<small>Building your reef</small>
+    </div>
+    <div id="panel">
+      <div id="brand">Reef<small>A living aquarium</small></div>
+      <div class="line"></div>
+      <div id="hint">
+        Drag a fish to move it. Drag water to pan.<br />Pinch / scroll to zoom ·
+        Right-drag to orbit · H to hide
+      </div>
+      <button id="pause" aria-label="Pause aquarium">Pause</button
+      ><button id="quality">Quality: High</button
+      ><button id="reset">Reset view</button>
+      <select
+        id="appearance"
+        aria-label="Aquarium appearance"
+        title="Aquarium appearance"
+      >
+        <option value="System">System theme</option>
+        <option value="Daily">Daily cycle</option>
+        <option value="Day">Daylight</option>
+        <option value="Night">UV night</option>
+        <option value="Planet X">Planet X</option>
+      </select>
+    </div>
+    <div id="status"></div>
+    <div id="error" role="alert"></div>
+    <script src="aquarium.js"></script>
+  </body>
+</html>

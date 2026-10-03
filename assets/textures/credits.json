@@ -1,0 +1,86 @@
+[
+  {
+    "file": "assets/textures/coral_ground_02_color.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coral_ground_02/coral_ground_02_diff_1k.jpg",
+    "license": "CC0-1.0",
+    "asset": "https://polyhaven.com/a/coral_ground_02"
+  },
+  {
+    "file": "assets/textures/coral_ground_02_normal.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coral_ground_02/coral_ground_02_nor_gl_1k.jpg",
+    "license": "CC0-1.0",
+    "asset": "https://polyhaven.com/a/coral_ground_02"
+  },
+  {
+    "file": "assets/textures/coral_ground_02_roughness.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coral_ground_02/coral_ground_02_rough_1k.jpg",
+    "license": "CC0-1.0",
+    "asset": "https://polyhaven.com/a/coral_ground_02"
+  },
+  {
+    "file": "assets/textures/coral_gravel_color.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coral_gravel/coral_gravel_diff_1k.jpg",
+    "license": "CC0-1.0",
+    "asset": "https://polyhaven.com/a/coral_gravel"
+  },
+  {
+    "file": "assets/textures/coral_gravel_normal.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coral_gravel/coral_gravel_nor_gl_1k.jpg",
+    "license": "CC0-1.0",
+    "asset": "https://polyhaven.com/a/coral_gravel"
+  },
+  {
+    "file": "assets/textures/coral_gravel_roughness.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coral_gravel/coral_gravel_rough_1k.jpg",
+    "license": "CC0-1.0",
+    "asset": "https://polyhaven.com/a/coral_gravel"
+  },
+  {
+    "file": "assets/textures/rock_face_03_color.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_face_03/rock_face_03_diff_1k.jpg",
+    "license": "CC0-1.0",
+    "asset": "https://polyhaven.com/a/rock_face_03"
+  },
+  {
+    "file": "assets/textures/rock_face_03_normal.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_face_03/rock_face_03_nor_gl_1k.jpg",
+    "license": "CC0-1.0",
+    "asset": "https://polyhaven.com/a/rock_face_03"
+  },
+  {
+    "file": "assets/textures/rock_face_03_roughness.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_face_03/rock_face_03_rough_1k.jpg",
+    "license": "CC0-1.0",
+    "asset": "https://polyhaven.com/a/rock_face_03"
+  },
+  {
+    "file": "assets/textures/coast_land_rocks_01_color.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/coast_land_rocks_01/coast_land_rocks_01_diff_2k.jpg",
+    "license": "CC0-1.0",
+    "asset": "https://polyhaven.com/a/coast_land_rocks_01"
+  },
+  {
+    "file": "assets/textures/coast_land_rocks_01_normal.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/coast_land_rocks_01/coast_land_rocks_01_nor_gl_2k.jpg",
+    "license": "CC0-1.0",
+    "asset": "https://polyhaven.com/a/coast_land_rocks_01"
+  },
+  {
+    "file": "assets/textures/coast_land_rocks_01_roughness.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/coast_land_rocks_01/coast_land_rocks_01_rough_2k.jpg",
+    "license": "CC0-1.0",
+    "asset": "https://polyhaven.com/a/coast_land_rocks_01"
+  },
+  {
+    "file": "assets/textures/coast_land_rocks_01_ao.jpg",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/coast_land_rocks_01/coast_land_rocks_01_ao_2k.jpg",
+    "license": "CC0-1.0",
+    "asset": "https://polyhaven.com/a/coast_land_rocks_01"
+  },
+  {
+    "file": "assets/lighting/studio_small_08_1k.hdr",
+    "source": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/studio_small_08_1k.hdr",
+    "license": "CC0-1.0",
+    "asset": "https://polyhaven.com/a/studio_small_08"
+  }
+]

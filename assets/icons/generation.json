@@ -1,0 +1,7 @@
+{
+  "generator": "Built-in image_gen",
+  "date": "2026-10-04",
+  "prompt": "Use case: stylized-concept. Asset type: final macOS application icon for an aquarium app named Reef. Create a single beautiful square icon, 1024 by 1024. Center a cute miniature three-dimensional reef fish, in a friendly three-quarter side view facing left, with a plump rounded coral-orange body, a soft cream belly, a small flowing fan tail, rounded golden-orange dorsal and side fins with gently translucent edges, a large glossy dark eye, and a tiny natural smiling mouth. Premium sculpted 3D character render with real volume, subtle pearlescent scale detail, soft studio reflections and lovely lighting from upper left. Fish should fill most of the icon and have a bold, simple silhouette readable at very small sizes. Behind it, a smooth rounded-square macOS icon tile in deep ocean teal to luminous turquoise, with subtle underwater depth and a restrained soft contact shadow under the fish. The rounded square tile occupies about 88 percent of the canvas, with even transparent outer margins and rounded corners; all pixels outside the tile must be genuinely transparent. The fish stays within the tile. Polished, charming, minimal, warm fish contrasting with cool water, no outlines, no text, no letters, no numbers, no logo watermark, no extra fish, no scenery or coral clutter, no fake checkerboard. Output exactly one centered finished app icon, not an icon sheet or a device mockup.",
+  "source": "Reef.png",
+  "nativeIcon": "Reef.icns"
+}

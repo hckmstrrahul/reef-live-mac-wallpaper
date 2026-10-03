@@ -1,0 +1,35 @@
+{
+  "name": "reef-live",
+  "version": "0.12.0",
+  "private": true,
+  "type": "module",
+  "description": "Free interactive 3D aquarium live wallpaper for macOS",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs && playwright test",
+    "app": "npm run build && bash scripts/build-app.sh",
+    "blender": "node scripts/export-scene.mjs && /Applications/Blender.app/Contents/MacOS/Blender --background --python scripts/create-blender.py",
+    "test:webkit": "node scripts/check-webkit.mjs --file",
+    "profile": "node scripts/profile-performance.mjs",
+    "test:native": "swift test --package-path native --scratch-path build/native-tests",
+    "screenshots": "node scripts/screenshots.mjs"
+  },
+  "dependencies": {
+    "three": "0.186.1",
+    "three-mesh-bvh": "0.9.15"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "esbuild": "^0.25.0",
+    "prettier": "^3.9.9"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hckmstrrahul/reef-live.git"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

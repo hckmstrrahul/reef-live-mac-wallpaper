@@ -1,0 +1,3 @@
+https://github.com/jeantimex/threejs-water
+Commit: f35a700a16fe386beac997806ed4471018c93ef7
+Vendored Water.ts and its shader dependencies, unchanged.

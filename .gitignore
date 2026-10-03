@@ -1,0 +1,28 @@
+node_modules/
+dist/
+build/
+test-results/
+playwright-report/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.p8
+native/.build/
+native/.swiftpm/
+__pycache__/
+*.pyc
+
+# Generated scenes contain private art references and can be rebuilt.
+assets/blender/
+assets/reference/
+assets/models/corals/source/
+assets/icons/Reef.icns
+# Unused look-development alternatives, not loaded by Reef.
+assets/textures/rock_face_03_*.jpg
+
+# Local iteration history, not public project documentation.
+docs/PLAN.md
+docs/VALIDATION.md
