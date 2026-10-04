@@ -41,14 +41,22 @@ The cycle follows your Mac’s local clock and catches up after sleep.
 
 ## Get started
 
-**Requirements:** macOS 14 or newer. Apple silicon is the tested platform; Intel builds are not validated. The downloadable app is for Apple silicon Macs.
+| Compatibility | Recommendation |
+| :--- | :--- |
+| **macOS** | macOS 14 Sonoma or later. |
+| **Download** | Apple silicon Macs (M-series). Intel builds are not validated. |
+| **Recommended setup** | Apple silicon with **16 GB RAM or more**; start with **Balanced** quality. |
+| **High quality / multiple large displays** | A Pro or Max chip with more GPU capacity is preferable; use Balanced or Eco if playback slows or energy use is high. |
+| **Tested hardware** | Apple M5 Max. Other M-series performance has not been benchmarked; the recommendation is guidance, not a guaranteed minimum. |
 
-1. **[Download Reef for Mac](https://github.com/hckmstrrahul/reef-live/releases/latest)**, unzip it, and move `Reef.app` to Applications. No Node.js or Blender required. You can also [build from source](#build-from-source).
+1. **[Download Reef for Mac](https://github.com/hckmstrrahul/reef-live-mac-wallpaper/releases/latest)**, unzip it, and move `Reef.app` to Applications. No Node.js or Blender required. You can also [build from source](#build-from-source).
 2. Click the little fish in your menu bar and choose **Start desktop wallpaper**.
 3. Keep **Interact with desktop aquarium** checked for desktop gestures.
 4. Choose **Appearance → Daily cycle**, or select your favorite theme.
 
 **First launch:** this release is ad-hoc signed, not Apple-notarized. If macOS blocks it, follow [Apple’s Open Anyway instructions](https://support.apple.com/en-us/102445) only if you trust this download.
+
+Choose **About Reef** in the menu for app details, author and project links.
 
 Leave Reef running in the menu bar. Closing the preview is fine. **Stop desktop wallpaper** reveals your usual wallpaper. After quitting and reopening Reef, start the wallpaper again.
 
@@ -61,15 +69,15 @@ Leave Reef running in the menu bar. Closing the preview is fine. **Stop desktop 
 | Escape / Reset view | Restore the default composition |
 | Space / H / D in preview | Pause / hide controls / show rendering stats |
 
-**Need help?** Start with [setup and troubleshooting](docs/BUILDING.md). If High is too demanding, try Balanced or Eco, especially with multiple displays. Physical desktop gestures and Spaces behavior may vary by macOS setup; please [report reproducible issues](https://github.com/hckmstrrahul/reef-live/issues).
+**Need help?** Start with [setup and troubleshooting](docs/BUILDING.md). If High is too demanding, try Balanced or Eco, especially with multiple displays. Physical desktop gestures and Spaces behavior may vary by macOS setup; please [report reproducible issues](https://github.com/hckmstrrahul/reef-live-mac-wallpaper/issues).
 
 ## Build from source
 
 Install **Node.js 22+** and **Xcode Command Line Tools** (`xcode-select --install`). A Swift 6 toolchain is required. Blender is optional.
 
 ```sh
-git clone https://github.com/hckmstrrahul/reef-live.git
-cd reef-live
+git clone https://github.com/hckmstrrahul/reef-live-mac-wallpaper.git
+cd reef-live-mac-wallpaper
 npm ci
 npm run app
 open build/Reef.app

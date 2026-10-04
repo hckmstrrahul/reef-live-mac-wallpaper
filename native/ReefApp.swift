@@ -73,6 +73,7 @@ final class ReefApp: NSObject, NSApplicationDelegate, WKScriptMessageHandler, WK
         self.appearanceMenu = appearanceMenu
         menu.addItem(withTitle: "Appearance", action: nil, keyEquivalent: "").submenu = appearanceMenu
         menu.addItem(.separator())
+        menu.addItem(withTitle: "About Reef", action: #selector(showAbout), keyEquivalent: "").target = self
         menu.addItem(withTitle: "Quit Reef", action: #selector(quit), keyEquivalent: "q").target = self
         item.menu = menu
         statusItem = item
@@ -117,6 +118,40 @@ final class ReefApp: NSObject, NSApplicationDelegate, WKScriptMessageHandler, WK
         window.center()
         window.makeKeyAndOrderFront(nil)
         preview = window
+        NSApp.activate(ignoringOtherApps: true)
+    }
+
+    @objc private func showAbout() {
+        let paragraph = NSMutableParagraphStyle()
+        paragraph.alignment = .center
+        let credits = NSMutableAttributedString()
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: NSFont.systemFont(ofSize: 12),
+            .foregroundColor: NSColor.labelColor,
+            .paragraphStyle: paragraph,
+        ]
+        func append(_ text: String, link: String? = nil) {
+            var style = attributes
+            if let link, let url = URL(string: link) {
+                style[.link] = url
+                style[.foregroundColor] = NSColor.linkColor
+            }
+            credits.append(NSAttributedString(string: text, attributes: style))
+        }
+        append("A little living ocean for your Mac desktop.\nFree and open source.\n\n")
+        append("First created ")
+        append("Oct 2026", link: "https://github.com/hckmstrrahul/reef-live-mac-wallpaper/commit/4e2861148cf1594e241f93fc3e3da98b444ba330")
+        append("\nMade by ")
+        append("@hckmstrrahul", link: "https://twitter.com/hckmstrrahul")
+        append("\n")
+        append("View on GitHub", link: "https://github.com/hckmstrrahul/reef-live-mac-wallpaper")
+        append("\n\nmacOS 14 or later · Apple silicon\nRecommended: 16 GB RAM, Balanced quality\nTested on Apple M5 Max\n\n")
+        append("Licenses and asset credits", link: "https://github.com/hckmstrrahul/reef-live-mac-wallpaper/blob/main/docs/THIRD_PARTY.md")
+        NSApp.orderFrontStandardAboutPanel(options: [
+            .applicationName: "Reef",
+            .applicationIcon: NSApp.applicationIconImage as Any,
+            .credits: credits,
+        ])
         NSApp.activate(ignoringOtherApps: true)
     }
 

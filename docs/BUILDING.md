@@ -3,6 +3,7 @@
 ## Native Mac app
 
 - macOS 14+, Node.js 22+, npm, and a Swift 6 toolchain via Xcode or Command Line Tools.
+- Recommended: Apple silicon with 16 GB RAM or more, starting with Balanced quality. Pro/Max GPU capacity is preferable for High or multiple large displays. This is guidance, not a benchmarked minimum; only Apple M5 Max has been measured.
 - Tested locally on Apple silicon. The build targets the current machine’s architecture, not a universal binary.
 - No Blender, Python or paid developer account is needed for the normal app build.
 
