@@ -23,7 +23,8 @@ def area(name,location,energy,color,size,target):
 area('Soft turquoise water fill',(1,-6,7),1050,(.92,.96,1.),9,(0,1,3))
 sun_data=bpy.data.lights.new('Upper-left sunlight','SPOT');sun_data.energy=4250;sun_data.color=(.91,.96,1.);sun_data.spot_size=.68;sun_data.spot_blend=.78;sun_data.shadow_soft_size=.35
 sun=bpy.data.objects.new('Upper-left sunlight',sun_data);scene.collection.objects.link(sun);sun.location=(-6.5,-1.0,12.5);aim(sun,(.8,2.,.5))
-camdata=bpy.data.cameras.new('Reference composition');cam=bpy.data.objects.new('Reference composition',camdata);scene.collection.objects.link(cam);cam.location=(0,-16.485,4.066);aim(cam,(0,.8,3.35));camdata.lens=28.5;camdata.sensor_width=36;camdata.dof.use_dof=True;camdata.dof.focus_distance=17.3;camdata.dof.aperture_fstop=8;scene.camera=cam
+view_distance=17.3 / 1.1
+camdata=bpy.data.cameras.new('Reference composition');cam=bpy.data.objects.new('Reference composition',camdata);scene.collection.objects.link(cam);cam.location=(0,.8-math.cos(.0414)*view_distance,3.35+math.sin(.0414)*view_distance);aim(cam,(0,.8,3.35));camdata.lens=28.5;camdata.sensor_width=36;camdata.dof.use_dof=True;camdata.dof.focus_distance=view_distance;camdata.dof.aperture_fstop=8;scene.camera=cam
 world=bpy.data.worlds.new('Deep teal water');world.use_nodes=True;world.node_tree.nodes['Background'].inputs['Color'].default_value=(.045,.18,.23,1);world.node_tree.nodes['Background'].inputs['Strength'].default_value=.28;scene.world=world
 env=world.node_tree.nodes.new('ShaderNodeTexEnvironment');env.image=bpy.data.images.load(str(root/'assets/lighting/studio_small_08_1k.hdr'));env.image.pack();world.node_tree.links.new(env.outputs['Color'],world.node_tree.nodes['Background'].inputs['Color'])
 # Cycles homogeneous participating water medium for offline look development.

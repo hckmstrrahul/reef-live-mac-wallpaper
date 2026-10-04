@@ -6,7 +6,7 @@
 
 Watch colorful fish swim through a planted reef, tap them for a quick reaction, or explore with a drag and a pinch. Reef runs locally in your menu bar, with no account, subscription or internet connection needed during playback.
 
-![Reef in Daylight: blue water, colorful fish and a planted coral canyon](docs/images/daylight.jpg)
+![Reef in Daylight: blue water, colorful fish and a planted coral canyon](docs/images/reef-hero.png)
 
 ## Three worlds, one aquarium
 
@@ -16,9 +16,9 @@ Watch colorful fish swim through a planted reef, tap them for a quick reaction, 
 | 🌙 **UV Night** | Deep ultramarine water with selective fluorescent fish, coral and plant markings. |
 | 🪐 **Planet X** | An imagined alien sea with copper light, plum water and shifting bioluminescent patterns. |
 
-| UV Night | Planet X |
-| :---: | :---: |
-| ![Ultramarine UV Night aquarium](docs/images/uv-night.jpg) | ![Copper and plum Planet X aquarium](docs/images/planet-x.jpg) |
+| Daylight | UV Night | Planet X |
+| :---: | :---: | :---: |
+| ![Bright Daylight aquarium](docs/images/daylight.jpg) | ![Ultramarine UV Night aquarium](docs/images/uv-night.jpg) | ![Copper and plum Planet X aquarium](docs/images/planet-x.jpg) |
 
 *Screenshots are captured from the running app, not concept renders.*
 
@@ -41,12 +41,14 @@ The cycle follows your Mac’s local clock and catches up after sleep.
 
 ## Get started
 
-**Requirements:** macOS 14 or newer. Apple silicon is the tested platform; Intel builds are not validated. This repository contains source and runtime assets, not an installer.
+**Requirements:** macOS 14 or newer. Apple silicon is the tested platform; Intel builds are not validated. The downloadable app is for Apple silicon Macs.
 
-1. [Build Reef](#build-from-source), then open `build/Reef.app`. You can move it to Applications.
+1. **[Download Reef for Mac](https://github.com/hckmstrrahul/reef-live/releases/latest)**, unzip it, and move `Reef.app` to Applications. No Node.js or Blender required. You can also [build from source](#build-from-source).
 2. Click the little fish in your menu bar and choose **Start desktop wallpaper**.
 3. Keep **Interact with desktop aquarium** checked for desktop gestures.
 4. Choose **Appearance → Daily cycle**, or select your favorite theme.
+
+**First launch:** this release is ad-hoc signed, not Apple-notarized. If macOS blocks it, follow [Apple’s Open Anyway instructions](https://support.apple.com/en-us/102445) only if you trust this download.
 
 Leave Reef running in the menu bar. Closing the preview is fine. **Stop desktop wallpaper** reveals your usual wallpaper. After quitting and reopening Reef, start the wallpaper again.
 

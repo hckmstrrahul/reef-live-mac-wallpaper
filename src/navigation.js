@@ -11,7 +11,7 @@ export function createNavigation({
   onFishMove,
 }) {
   const target = new T.Vector3(0, 3.35, -0.8);
-  const defaultDistance = 17.3;
+  const defaultDistance = 17.3 / 1.1; // 10% greater magnification at the view target.
   let distance = defaultDistance,
     yaw = 0,
     pitch = 0.0414;
