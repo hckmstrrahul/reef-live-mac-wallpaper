@@ -41,6 +41,8 @@ The cycle follows your Mac’s local clock and catches up after sleep.
 
 ## Get started
 
+**Latest release: [Reef 1.0.1](https://github.com/hckmstrrahul/reef-live-mac-wallpaper/releases/tag/v1.0.1)** (build 20). Includes the new **About Reef** window with author/project links and Mac compatibility details. Download `Reef-1.0.1-macOS-arm64.zip` from the release assets.
+
 | Compatibility | Recommendation |
 | :--- | :--- |
 | **macOS** | macOS 14 Sonoma or later. |
