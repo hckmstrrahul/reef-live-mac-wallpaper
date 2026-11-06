@@ -1,81 +1,53 @@
-<p align="center"><img src="assets/icons/Reef.png" alt="Reef's little orange fish" width="100"></p>
+<p align="center"><img src="assets/icons/Reef.png" alt="Reef's orange fish icon" width="100"></p>
 
-# 🐠 Reef Live
+# Reef Live
 
-**A little living ocean for your Mac desktop.** Free, open source, and fully 3D.
+An interactive 3D aquarium for your Mac desktop. Fish swim through a planted reef beneath your desktop icons and windows; click a fish, release bubbles or explore with a drag and a pinch.
 
-Watch colorful fish swim through a planted reef, tap them for a quick reaction, or explore with a drag and a pinch. Reef runs locally in your menu bar, with no account, subscription or internet connection needed during playback.
+[Download for Mac](https://github.com/hckmstrrahul/reef-live-mac-wallpaper/releases/latest) · [Setup and troubleshooting](docs/BUILDING.md) · [Build from source](#build-from-source)
 
-![Reef in Daylight: blue water, colorful fish and a planted coral canyon](docs/images/reef-hero.png)
+![Reef's Daylight aquarium with colorful fish and a planted coral canyon](docs/images/reef-hero.png)
 
-## Three worlds, one aquarium
+Reef runs locally from the menu bar. Playback needs no account, subscription or internet connection.
 
-| Theme | Mood |
-| :--- | :--- |
-| ☀️ **Daylight** | Clear blue water, soft corner sunlight, rippling reflections and bright reef colors. |
-| 🌙 **UV Night** | Deep ultramarine water with selective fluorescent fish, coral and plant markings. |
-| 🪐 **Planet X** | An imagined alien sea with copper light, plum water and shifting bioluminescent patterns. |
+## Install
+
+Requires **macOS 14 Sonoma or later**. The published download targets **Apple silicon**; Intel builds are not validated.
+
+1. Download the macOS arm64 ZIP from [Releases](https://github.com/hckmstrrahul/reef-live-mac-wallpaper/releases/latest), unzip it and move `Reef.app` to Applications.
+2. Open Reef, click its menu-bar fish and choose **Start desktop wallpaper**.
+3. Leave **Interact with desktop aquarium** enabled for desktop gestures.
+4. Choose an appearance and start with **Balanced** quality.
+
+The release is ad-hoc signed, not Apple-notarized. If macOS blocks it and you trust the download, follow [Apple's Open Anyway instructions](https://support.apple.com/en-us/102445).
+
+**Stop desktop wallpaper** reveals your usual wallpaper. Closing the preview leaves the menu-bar app running; after quitting and reopening Reef, start the wallpaper again.
+
+## Choose a world
 
 | Daylight | UV Night | Planet X |
-| :---: | :---: | :---: |
-| ![Bright Daylight aquarium](docs/images/daylight.jpg) | ![Ultramarine UV Night aquarium](docs/images/uv-night.jpg) | ![Copper and plum Planet X aquarium](docs/images/planet-x.jpg) |
+| --- | --- | --- |
+| ![Daylight aquarium](docs/images/daylight.jpg) | ![UV Night aquarium](docs/images/uv-night.jpg) | ![Planet X aquarium](docs/images/planet-x.jpg) |
+| Clear blue water and bright reef colors. | Ultramarine water and fluorescent markings. | An alien sea with copper light and bioluminescence. |
 
-*Screenshots are captured from the running app, not concept renders.*
+These are captures from the running app. Choose a theme, follow macOS appearance, or use **Daily cycle**: Daylight from 7 AM–5 PM, Planet X from 5–9 PM and UV Night overnight, using your Mac's local clock.
 
-Choose a theme yourself, follow macOS light/dark appearance, or use **Daily cycle**:
-
-- **7 AM–5 PM:** Daylight
-- **5–9 PM:** Planet X
-- **9 PM–7 AM:** UV Night
-
-The cycle follows your Mac’s local clock and catches up after sleep.
-
-## What you can do
-
-- **Meet 44 fish:** animated bodies and fins, long curved routes, foreground visits and reef avoidance.
-- **Touch the aquarium:** click a fish for a brief faster swim; drag it to a new position. Click scenery to release bubbles.
-- **Explore:** drag empty water to pan; scroll or pinch to zoom; reset whenever you like.
-- **Enjoy the details:** scanned coral forms, six aquatic plant varieties, moving water reflections and differently sized bubbles.
-- **Fill every display:** each monitor gets its own aquarium view beneath desktop icons and app windows.
-- **Choose your balance:** High, Balanced and Eco quality; pause anytime. Display sleep pauses animation.
-
-## Get started
-
-**Latest release: [Reef 1.0.1](https://github.com/hckmstrrahul/reef-live-mac-wallpaper/releases/tag/v1.0.1)** (build 20). Includes the new **About Reef** window with author/project links and Mac compatibility details. Download `Reef-1.0.1-macOS-arm64.zip` from the release assets.
-
-| Compatibility | Recommendation |
-| :--- | :--- |
-| **macOS** | macOS 14 Sonoma or later. |
-| **Download** | Apple silicon Macs (M-series). Intel builds are not validated. |
-| **Recommended setup** | Apple silicon with **16 GB RAM or more**; start with **Balanced** quality. |
-| **High quality / multiple large displays** | A Pro or Max chip with more GPU capacity is preferable; use Balanced or Eco if playback slows or energy use is high. |
-| **Tested hardware** | Apple M5 Max. Other M-series performance has not been benchmarked; the recommendation is guidance, not a guaranteed minimum. |
-
-1. **[Download Reef for Mac](https://github.com/hckmstrrahul/reef-live-mac-wallpaper/releases/latest)**, unzip it, and move `Reef.app` to Applications. No Node.js or Blender required. You can also [build from source](#build-from-source).
-2. Click the little fish in your menu bar and choose **Start desktop wallpaper**.
-3. Keep **Interact with desktop aquarium** checked for desktop gestures.
-4. Choose **Appearance → Daily cycle**, or select your favorite theme.
-
-**First launch:** this release is ad-hoc signed, not Apple-notarized. If macOS blocks it, follow [Apple’s Open Anyway instructions](https://support.apple.com/en-us/102445) only if you trust this download.
-
-Choose **About Reef** in the menu for app details, author and project links.
-
-Leave Reef running in the menu bar. Closing the preview is fine. **Stop desktop wallpaper** reveals your usual wallpaper. After quitting and reopening Reef, start the wallpaper again.
+## Controls and performance
 
 | Control | Action |
-| :--- | :--- |
-| Click fish / scenery | Brief fish reaction / a loose burst of bubbles |
-| Drag fish / empty water | Move a fish / pan the camera |
+| --- | --- |
+| Click fish / scenery | Fish reaction / bubbles |
+| Drag fish / empty water | Move a fish / pan |
 | Scroll or pinch | Zoom |
 | Right-drag or Option-drag in preview | Orbit |
-| Escape / Reset view | Restore the default composition |
-| Space / H / D in preview | Pause / hide controls / show rendering stats |
+| Escape / Reset view | Restore the composition |
+| Space / H / D in preview | Pause / hide controls / rendering stats |
 
-**Need help?** Start with [setup and troubleshooting](docs/BUILDING.md). If High is too demanding, try Balanced or Eco, especially with multiple displays. Physical desktop gestures and Spaces behavior may vary by macOS setup; please [report reproducible issues](https://github.com/hckmstrrahul/reef-live-mac-wallpaper/issues).
+Each monitor renders its own aquarium. **High**, **Balanced** and **Eco** adjust quality; display sleep pauses animation. Apple silicon with 16 GB RAM or more is recommended, but only an M5 Max was benchmarked. Multiple large displays increase GPU work; try Balanced or Eco if playback slows or energy use is high. Desktop gestures and Spaces behavior can vary by macOS setup.
 
 ## Build from source
 
-Install **Node.js 22+** and **Xcode Command Line Tools** (`xcode-select --install`). A Swift 6 toolchain is required. Blender is optional.
+Requires **Node.js 22+**, npm and **Xcode Command Line Tools with Swift 6**. Blender is optional.
 
 ```sh
 git clone https://github.com/hckmstrrahul/reef-live-mac-wallpaper.git
@@ -85,20 +57,23 @@ npm run app
 open build/Reef.app
 ```
 
-The app bundles everything it needs for offline playback. Local builds are ad-hoc signed, not Apple-notarized. They do not require an Apple Developer membership. See [build notes](docs/BUILDING.md) for browser development, checks and Blender exports.
+The build bundles offline assets and applies a local ad-hoc signature. No paid Apple Developer membership is required. For browser development, `npm run dev` serves [127.0.0.1:4187](http://127.0.0.1:4187).
 
-## How it was built
+## How it works
 
-- **Swift + AppKit + WKWebView** provide the menu bar, desktop windows, display management and native gesture bridge.
-- **Three.js + GLSL** render actual 3D meshes with procedural swimming, plant sway, animated pigments, shadows and water optics.
-- **threejs-water** supplies the GPU surface-wave solver; a small custom 3D velocity field drives currents and bubble motion.
-- **Blender** was used to prepare coral scans and create an optional editable scene export. It is not needed to run the app.
-- **Codex** assisted with implementation, iteration and testing. The app icon was made with OpenAI image generation; its [prompt and provenance](assets/icons/generation.json) are included.
-- **esbuild, Playwright and Swift Testing** handle bundling and automated checks.
+Swift, AppKit and WKWebView manage menu-bar controls, desktop windows and gestures. Three.js and GLSL render the reef, swimming, plant motion and water effects. Fish share an anatomical model; species-inspired colors, fluid coupling and caustics are artistic approximations rather than a scientific simulation.
 
-This is a stylized real-time aquarium. Fish share one underlying anatomical model; species-inspired colors and UV effects are artistic. Fluid coupling, caustics and collisions are approximations, not scientific simulation. Read the [architecture and performance notes](docs/ARCHITECTURE.md) for details.
+| Guide | Covers |
+| --- | --- |
+| [Building and troubleshooting](docs/BUILDING.md) | Native/browser development, tests and optional Blender export. |
+| [Architecture](docs/ARCHITECTURE.md) | Rendering, native integration and performance. |
+| [Asset provenance](docs/THIRD_PARTY.md) | Sources, modifications and licenses. |
+| [Contributing](CONTRIBUTING.md) | Changes and bug reports. |
+
+Implementation and testing were assisted by Codex. The app icon was made with OpenAI image generation; its [prompt and provenance](assets/icons/generation.json) are included.
 
 ## Credits, licensing and contributions
+
 
 Reef’s original code is **[MIT licensed](LICENSE)**. Third-party code retains its MIT notices; the fish model, coral scans, textures and HDRI use CC0.
 
